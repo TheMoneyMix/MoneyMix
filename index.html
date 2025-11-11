@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Mix by TEESOMONEEY - Order Now!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="money-mix-logo.png" alt="Money Mix by TEESOMONEEY Logo" class="logo">
+        </div>
+        <p class="tagline">Sip on Success!</p>
+    </header>
+
+    <main class="container">
+
+        <section id="order-options" class="card">
+            <h2>🚚 How Would You Like Your Mix?</h2>
+            <div class="form-group radio-group delivery-pickup-options">
+                <label>
+                    <input type="radio" name="orderType" value="pickup" checked>
+                    <span>Pick Up</span>
+                </label>
+                <label>
+                    <input type="radio" name="orderType" value="delivery">
+                    <span>Delivery</span>
+                </label>
+            </div>
+            <p class="note">Please note: Delivery fees may apply.</p>
+        </section>
+
+        <section id="menu-overview" class="card">
+            <h2>💰 The Money Menu</h2>
+            <p>Ready to build your fortune? Choose your featured flavor and customize it with your favorite add-ons!</p>
+
+            <h3>Featured Alcoholic Flavors</h3>
+            <ul>
+                <li>**Green Tea$e:** A tangy Sour Apple mix.</li>
+                <li>**Blue Bankroll:** Our signature Blue Razz Lemonade.</li>
+                <li>**Cherry Reign:** A classic Cherry Limeade.</li>
+                <li>**Baddie Berry:** Sweet and simple Strawberry.</li>
+                <li>**Money Melon:** Refreshing Watermelon.</li>
+                <li>**Luxury Lemonade:** A premium, classic Lemonade.</li>
+                <li>**Mango Million$:** A rich Peach Mango blend.</li>
+                <li>**Bank on Blue:** A delicious Mixed Berry combo.</li>
+                <li>**Punch & Profit$:** Our signature Fruit Punch.</li>
+            </ul>
+
+            <h3>Sizes & Prices</h3>
+            <ul>
+                <li>**16oz Pouch:** $10.00</li>
+                <li>**32oz Cup:** $15.00</li>
+            </ul>
+
+            <h3>"Bling" Your Drink (AddOns) - +$0.75 each</h3>
+            <p>Make your Money Mix truly yours. Add some extra assets from our selection!</p>
+            <ul>
+                <li>**Gushers:** A *burst* of liquid gold.</li>
+                <li>**Nerds:** A little *crunch* with your cash.</li>
+                <li>**Jolly Ranchers:** Melt in some extra *hard cash* flavor.</li>
+                <li>**Strawberries:** Keep it *rich* and classic.</li>
+                <li>**Mangos:** A *golden* touch of sweet, tropical mango.</li>
+                <li>**Peaches:** Get *fuzzy* on the details.</li>
+                <li>**Lemons:** A *zesty* surcharge of fresh citrus.</li>
+                <li>**Tajin Chamoy:** A *spicy* investment that pays off.</li>
+            </ul>
+        </section>
+        
+        <section id="order-form" class="card">
+            <h2>✍️ Build Your Mix</h2>
+            <form id="drinkBuilder">
+                
+                <h3>1. Choose Your Featured Flavor</h3>
+                <div class="form-group">
+                    <select id="flavor" name="flavor">
+                        <option value="Green Tea$e">Green Tea$e (Sour Apple)</option>
+                        <option value="Blue Bankroll">Blue Bankroll (Blue Razz Lemonade)</option>
+                        <option value="Cherry Reign">Cherry Reign (Cherry Limeade)</option>
+                        <option value="Baddie Berry">Baddie Berry (Strawberry)</option>
+                        <option value="Money Melon">Money Melon (Watermelon)</option>
+                        <option value="Luxury Lemonade">Luxury Lemonade (Lemonade)</option>
+                        <option value="Mango Million$">Mango Million$ (Peach Mango)</option>
+                        <option value="Bank on Blue">Bank on Blue (Mixed Berry)</option>
+                        <option value="Punch & Profit$">Punch & Profit$ (Fruit Punch)</option>
+                    </select>
+                </div>
+
+                <h3>2. Select Your Size</h3>
+                <div class="form-group radio-group">
+                    <label>
+                        <input type="radio" name="size" value="16oz Pouch" data-price="10.00" checked>
+                        16oz Pouch ($10.00)
+                    </label>
+                    <label>
+                        <input type="radio" name="size" value="32oz Cup" data-price="15.00">
+                        32oz Cup ($15.00)
+                    </label>
+                </div>
+
+                <h3>3. "Bling" Your Drink (+$0.75 each)</h3>
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" name="addon" value="Gushers" data-price="0.75">
+                        Gushers
+                    </label>
+                    <label>
+                        <input type="checkbox" name="addon" value="Nerds" data-price="0.75">
+                        Nerds
+                    </label>
+                    <label>
+                        <input type="checkbox" name="addon" value="Jolly Ranchers" data-price="0.75">
+                        Jolly Ranchers
+                    </label>
+                    <label>
+                        <input type="checkbox" name="addon" value="Strawberries" data-price="0.75">
+                        Strawberries
+                    </label>
+                    <label>
+                        <input type="checkbox" name="addon" value="Mangos" data-price="0.75">
+                        Mangos
+                    </label>
+                    <label>
+                        <input type="checkbox" name="addon" value="Peaches" data-price="0.75">
+                        Peaches
+                    </label>
+                    <label>
+                        <input type="checkbox" name="addon" value="Lemons" data-price="0.75">
+                        Lemons
+                    </label>
+                    <label>
+                        <input type="checkbox" name="addon" value="Tajin Chamoy" data-price="0.75">
+                        Tajin Chamoy
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn btn-add">Add to Cart</button>
+            </form>
+        </section>
+
+        <section id="cart-section" class="card">
+            <h2>🛒 Your Cart</h2>
+            <div id="cart-items">
+                <p>Your cart is currently empty.</p>
+            </div>
+            <hr>
+            <div class="totals">
+                <p>Subtotal: <span id="subtotal">$0.00</span></p>
+                <p>Tax (8.25%): <span id="tax">$0.00</span></p>
+                <h3>Total: <span id="total">$0.00</span></h3>
+            </div>
+            <button class="btn btn-checkout">Proceed to Checkout</button>
+        </section>
+
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
